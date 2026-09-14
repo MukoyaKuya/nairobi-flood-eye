@@ -15,12 +15,22 @@ import {
   PLACE_ANCHOR_OFFSET_RATIO,
   flyToGlobeView,
   flyToPresetLocation,
+  CITY_POIS,
   geocodeNavigationMode,
   regionFramingPlan,
   REGION_SWATH_SPAN_KM,
   GLOBE_VIEW,
   searchAndFlyTo,
 } from './locations.js';
+
+test('Nairobi is available as a map preset with five orientation points', () => {
+  assert.equal(CITY_POIS.nairobi.name, 'Nairobi');
+  assert.equal(CITY_POIS.nairobi.pois.length, 5);
+  for (const poi of CITY_POIS.nairobi.pois) {
+    assert.ok(poi.lat >= -1.45 && poi.lat <= -1.16);
+    assert.ok(poi.lon >= 36.65 && poi.lon <= 37.1);
+  }
+});
 
 function stubViewer() {
   const flights = [];

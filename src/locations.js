@@ -17,6 +17,21 @@ import { unavailablePlaceSearch } from './search/placeSearch.js';
  *   buildingHeight — estimated height of landmark center above ground (meters)
  */
 export const CITY_POIS = {
+  nairobi: {
+    name: 'Nairobi',
+    groundElevation: 1795,
+    viewBounds: {
+      southwest: { lat: -1.45, lng: 36.65 },
+      northeast: { lat: -1.16, lng: 37.1 },
+    },
+    pois: [
+      { name: 'Nairobi CBD', lat: -1.2864, lon: 36.8172, alt: 1400, pitch: -35, heading: 0 },
+      { name: 'Uhuru Park', lat: -1.2917, lon: 36.8143, alt: 1200, pitch: -35, heading: 0 },
+      { name: 'Westlands', lat: -1.2676, lon: 36.8108, alt: 1200, pitch: -35, heading: 0 },
+      { name: 'Eastleigh', lat: -1.2784, lon: 36.8467, alt: 1200, pitch: -35, heading: 0 },
+      { name: 'Kasarani', lat: -1.2264, lon: 36.9004, alt: 1200, pitch: -35, heading: 0 },
+    ],
+  },
   austin: {
     name: 'Austin',
     groundElevation: 150, // meters above WGS84 ellipsoid
