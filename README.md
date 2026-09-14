@@ -1,3 +1,11 @@
+# Nairobi Flood Eye
+
+Nairobi Flood Eye is an early resident-focused flood preparedness prototype built from [God's Eye View](https://github.com/bilawalsidhu/gods-eye-view). It adds Nairobi to the map and links visitors to [official Kenya Meteorological Department warnings](https://meteo.go.ke/weather-warnings/) and the [National Disaster Operations Centre](https://ndoc.go.ke/). **It does not currently issue flood alerts, estimate flood risk, or recommend safe routes.**
+
+See the [product roadmap](docs/NAIROBI_FLOOD_EYE.md) for the proposed warning, preparedness, and response features. The original project documentation follows below; its global layers are inherited from upstream and are not Nairobi flood intelligence.
+
+---
+
 <div align="center">
 
 # 🌐 God's Eye View
